@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Neslinur Söylemez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+            margin-top: 40px;
+        }
+
+        .contact-info-card {
+            background-color: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .info-icon {
+            color: var(--color-accent);
+            min-width: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--color-text-main);
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 16px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius-md);
+            font-family: var(--font-primary);
+            font-size: 1rem;
+            background-color: #FAFAFA;
+            transition: var(--transition-fast);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            background-color: white;
+            box-shadow: 0 0 0 4px rgba(138, 154, 142, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Neslinur Söylemez</span>
+                <span class="logo-subtitle">Psikolog</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i data-lucide="menu"></i></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="iletisim.html" class="nav-cta active">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 40vh; align-items: flex-end; padding-bottom: 20px;">
+        <div class="container">
+            <h1 class="hero-title">İletişime Geçin</h1>
+            <p class="hero-description">Randevu talepleriniz ve merak ettikleriniz için bana ulaşabilirsiniz.</p>
+        </div>
+    </section>
+
+    <section class="container" style="padding-bottom: 100px;">
+        <div class="contact-container">
+            <div class="contact-info-wrapper">
+                <div class="contact-info-card">
+                    <h3 style="margin-bottom: 30px; font-size: 1.5rem;">İletişim Bilgileri</h3>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i data-lucide="mail"></i></div>
+                        <div>
+                            <strong>E-posta</strong>
+                            <p><a href="mailto:info@neslinur.com">info@neslinur.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i data-lucide="phone"></i></div>
+                        <div>
+                            <strong>Telefon</strong>
+                            <p><a href="tel:+905551234567">+90 555 123 45 67</a></p>
+                            <span style="font-size: 0.85rem; color: #666;">(Hafta içi 09:00 - 18:00)</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <strong>Konum</strong>
+                            <p>Bursa, Türkiye<br>Online Danışmanlık Hizmeti Mevcuttur</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px;">
+                        <h4 style="margin-bottom: 16px;">Sosyal Medya</h4>
+                        <div style="display: flex; gap: 16px;">
+                            <a href="#"
+                                style="background: white; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--color-accent);"><i
+                                    data-lucide="instagram"></i></a>
+                            <a href="#"
+                                style="background: white; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--color-accent);"><i
+                                    data-lucide="linkedin"></i></a>
+                            <a href="#"
+                                style="background: white; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--color-accent);"><i
+                                    data-lucide="youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Adınız Soyadınız</label>
+                        <input type="text" class="form-input" placeholder="Adınız Soyadınız">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">E-posta Adresiniz</label>
+                        <input type="email" class="form-input" placeholder="ornek@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Konu</label>
+                        <select class="form-input">
+                            <option>Danışmanlık Bilgisi</option>
+                            <option>Randevu Talebi</option>
+                            <option>MOXO Testi</option>
+                            <option>Diğer</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Mesajınız</label>
+                        <textarea class="form-textarea" rows="5"
+                            placeholder="Size nasıl yardımcı olabilirim?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                        Gönder <i data-lucide="send"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p style="text-align: center; color: white;">&copy; 2026 Neslinur Söylemez.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

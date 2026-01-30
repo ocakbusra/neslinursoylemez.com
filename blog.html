@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Neslinur Söylemez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Neslinur Söylemez</span>
+                <span class="logo-subtitle">Psikolog</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i data-lucide="menu"></i></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="iletisim.html" class="nav-cta">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 40vh; align-items: flex-end; padding-bottom: 40px;">
+        <div class="container">
+            <h1 class="hero-title">Blog & İçerikler</h1>
+            <p class="hero-description">Psikoloji pratikleri ve felsefi düşüncelerin kesişim noktasından yazılar.</p>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 60px 20px;">
+        <div class="blog-grid">
+            <!-- Yazı 1 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <div class="blog-image-placeholder"><i data-lucide="book-open"></i></div><span
+                        class="blog-category">Felsefi Psikoloji</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">28 Ocak 2026</span>
+                    <h3 class="blog-title">Konfor Alanı Yanılgısı: Nietzsche ve Gelişim</h3>
+                    <p class="blog-excerpt">Kişisel gelişim dünyasının klişesi "konfor alanından çık" öğüdüne
+                        Nietzsche'nin 'Üstinsan' kavramıyla derinlikli bir bakış.</p>
+                    <a href="#" class="blog-link">Devamını Oku <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Yazı 2 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <div class="blog-image-placeholder"><i data-lucide="smartphone"></i></div><span
+                        class="blog-category">Modern Yaşam</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">20 Ocak 2026</span>
+                    <h3 class="blog-title">Dijital Çağda "Ben" Olmak: Sartre ve Kimlik</h3>
+                    <p class="blog-excerpt">Sosyal medya vitrinleri arasında kaybolan benliği, Sartre'ın varoluşçu
+                        özgürlük penceresinden yeniden inşa etmek.</p>
+                    <a href="#" class="blog-link">Devamını Oku <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Yazı 3 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <div class="blog-image-placeholder"><i data-lucide="baby"></i></div><span
+                        class="blog-category">Çocuk Gelişimi</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">10 Ocak 2026</span>
+                    <h3 class="blog-title">Çocuklarda "Sınır" Kavramı: Özgürlük mü?</h3>
+                    <p class="blog-excerpt">Rousseau'nun eğitim felsefesinden modern ebeveynliğe: Çocuğa sınır koymak
+                        onu kısıtlamak mıdır, yoksa güvenli alan yaratmak mı?</p>
+                    <a href="#" class="blog-link">Devamını Oku <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Yazı 4 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <div class="blog-image-placeholder"><i data-lucide="flame"></i></div><span class="blog-category">İyi
+                        Oluş</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">5 Ocak 2026</span>
+                    <h3 class="blog-title">Tükenmişlik ve Camus: Sisifos Söyleni</h3>
+                    <p class="blog-excerpt">Modern zamanların hastalığı burnout (tükenmişlik) ile başa çıkarken,
+                        anlamsız görünen döngülerde bile anlam bulabilir miyiz?</p>
+                    <a href="#" class="blog-link">Devamını Oku <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p style="text-align: center; color: white;">&copy; 2026 Neslinur Söylemez.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
